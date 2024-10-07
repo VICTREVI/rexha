@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/jpeg" href="images/logorexha.JPG">
+    <link rel="stylesheet" href="registrate.css">
+</head>
+<body>     
+    <div class="container">
+        <form action="register.php" method="post" class="formulario">
+            <h2 class="titulo">INICIAR SESION</h2>
+            <img src="images/logorexha.JPG" alt="Descripción de la imagen" class="imagen-registro">
+
+            <div class="form">
+
+                <div class="usuario">
+                    <label for="">Usuario</label>
+                    <input type="text" name="usuario">
+                </div>
+
+                <div class="clave">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="clave">
+                </div>
+
+                <div class="cuenta">
+                <input class="boton" type="submit" value="LOGIN" name="INICIAR_SESION">
+                    <a href="index.php" class="boton">Salir</a>
+                </div>                      
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) 
+            {
+                document.title = " 😰no te vayas "; // Mostrar mensaje
+            } else {
+                document.title = '😁Gracias por volver '; // Ocultar mensaje
+            }
+        });
+    </script>
+
+</body>
+</html>
